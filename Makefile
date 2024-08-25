@@ -7,6 +7,7 @@ ENV = --env-file .env
 APP_FILE = docker_compose/app.yaml
 APP_CONTAINER = main-app
 MANAGE_PY = python manage.py
+USER = -U postgres
 
 .PHONY: storages
 storages:
@@ -18,7 +19,7 @@ storages-down:
 
 .PHONY: postgres
 postgres:
-	${EXEC} ${DB_CONTAINER} psql
+	${EXEC} ${DB_CONTAINER} psql ${USER}
 
 .PHONY: storages-logs
 storages-logs:
