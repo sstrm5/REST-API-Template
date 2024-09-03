@@ -1,6 +1,6 @@
-# Django Boilerplate with Docker Compose, Makefile, and PostgreSQL
+# Django REST API with Docker Compose, Makefile, and PostgreSQL
 
-This is a basic template for Django projects configured to use Docker Compose, Makefile, and PostgreSQL.
+This is a simple art project using Django Ninja.
 
 ## Requirements
 
